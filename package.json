@@ -1,0 +1,52 @@
+{
+    "name": "chat_app",
+    "version": "1.0.0",
+    "description": "app chat",
+    "main": "main.js",
+    "scripts": {
+        "dev": "nodemon main.js",
+        "start": "node main.js",
+        "build": "netlify-lambda build src",
+        "serve": "netlify-lambda serve src"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@google-cloud/translate": "^8.3.0",
+        "axios": "^1.7.2",
+        "bcrypt": "^5.1.1",
+        "cookie": "^0.6.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "cron": "^3.1.7",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "googleapis": "^140.0.0",
+        "joi": "^17.13.1",
+        "jsonwebtoken": "^9.0.2",
+        "module-alias": "^2.2.3",
+        "moment": "^2.30.1",
+        "mongodb": "^6.7.0",
+        "mongoose": "^8.4.0",
+        "multer": "^1.4.5-lts.1",
+        "netlify-lambda": "^2.0.16",
+        "nodemailer": "^6.9.14",
+        "redis": "^4.6.14",
+        "socket.io": "^4.7.5",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.0"
+    },
+    "_moduleAliases": {
+        "@": "src/",
+        "@root": "./"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.5.0",
+        "eslint": "^9.5.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "globals": "^15.6.0",
+        "nodemon": "^3.1.2"
+    }
+}
